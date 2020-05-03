@@ -1,0 +1,156 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif; /* Not Final */
+}
+
+html{
+    font-size: 10px;
+}
+
+.navbar {
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f6f6f6;
+}
+
+.logo {
+    margin-left: 8%;
+    cursor: pointer;
+}
+
+.login-small{
+    display: none;
+}
+
+.login{
+    margin-right: 8%;
+    height: 45px;
+    cursor: pointer;
+}
+
+.header {
+    height: 88vh;
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.header-wrapper {
+    background-image: url("./images/Ellipse.png");
+    height: 90%;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 10%;
+    position: relative;
+}
+
+.header-content {
+    color: #3d3d3d;
+    height: 60%;
+    width: 60%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+}
+
+.header-content p:nth-child(1){
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.header-content h1 {
+    font-weight: 700;
+    font-size: 4.5rem;
+    line-height: 0.9;
+    margin-top: 25px;
+}
+
+.header-content p:nth-child(3) {
+    font-size: 1.5rem;
+    margin-top: 25px;
+    font-weight: 500;
+}
+
+.header-content button {
+    margin-top: 15%;
+    padding: 3% 10%;
+    border: none;
+    background: #3d3d3d;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.header-content button:hover{
+    background: #252525;
+    transition: all 0.3s ease;
+}
+
+.superman {
+    background-image: url("./images/Illustration.svg");
+    background-repeat: no-repeat;
+    height: 90%;
+    width: 30%;
+    background-size: contain;
+}
+
+@media (max-width: 950px){
+    .header-content h1 {
+        font-size: 3.8rem;
+    }
+}
+
+@media (max-width: 800px) {
+    .login-small {
+        display: block;
+        height: 45px;
+        margin-right: 10%;
+        cursor: pointer;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .header {
+        height: 170vh;
+        flex-direction: column;
+    }
+
+    .header-wrapper {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-content {
+        top: 10%;
+    }
+
+    .superman {
+        display: none;
+    }
+}
+
+@media (max-width: 570px) {
+    .header-wrapper {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header-content {
+        top: 5%;
+    }
+}
