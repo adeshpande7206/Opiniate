@@ -19,6 +19,10 @@
     background-color: transparent;
 }
 
+.columns {
+    margin-top: 50px;
+}
+
 .c1{
     background: url("./images/Ellipse.png");
     background-size: 70%;
@@ -55,7 +59,10 @@
 @media (max-width: 650px) {
     .contents{
         top: 25%;
-        left: 25%;
+    }
+
+    .c1{
+        background-size: 100%;
     }
 }
 
