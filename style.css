@@ -24,7 +24,7 @@
 }
 
 .c1{
-    background: url("./images/Ellipse.png");
+    background: pink url("./images/Ellipse.png");
     background-size: 70%;
     background-repeat: no-repeat;
     background-position: center;
