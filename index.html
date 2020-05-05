@@ -1,42 +1,45 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Opinate &mdash; Host genuine & private polls online for free !</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+</head>
+<body>
     <nav class="navbar is-light" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <img src="./images/Mono-left.svg" width="112" height="28">
-        </a>
-      </div>
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-end">
-          <a class="navbar-item">
-            <img class="google-login" src="./images/google-auth-button.png" alt="google-auth-button">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="./images/Mono-left.svg" width="112" height="28">
+          </a>
+          <a class="navbar-item" href="#">
+              <img class="google-login" src="./images/google-auth-button.png" alt="google-auth-button">
           </a>
         </div>
-      </div>
+        <!-- <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item">
+              <img class="google-login" src="./images/google-auth-button.png" alt="google-auth-button">
+            </a>
+          </div>
+        </div> -->
     </nav>
-
-    <div class="columns">
-      <div class="c1 column is-three-fifths">
-        <div class="content">
-          <img src="./images/Ellipse.png" alt="Ellipse">
-          <p class="is-size-5">Welcome !</p>
-          <h2 class="is-size-1-desktop is-size-2-tablet is-size-2-mobile">Host Free & Private Polls.</h2>
-          <p class="is-size-5 is-hidden-tablet-only">Join us ! To stay Updated about your Products.</p>
-          <button class="button is-dark is-medium">Create</button>
+    <div class="columns" >
+        <div class="c1 column is-8-desktop is-full-tablet">
+            <div class="contents">
+                <p class="is-size-5 is-size-6-mobile has-text-weight-semibold is-uppercase">Welcome !</p>
+                <h2 class="is-size-1 is-size-2-mobile has-text-weight-bold">Host Free & Private Polls.</h2>
+                <p class="is-size-5 is-size-6-mobile">Join us ! To stay Updated about your Products.</p>
+                <button class="button is-dark is-medium is-hidden-mobile">Create</button>
+                <button class="button is-dark is-small is-hidden-tablet">Create</button>
+            </div>
         </div>
-      </div>
-      <div class="column">
-        <img src="./images/Illustration.svg" alt="Illustration">
-      </div>
+        <div class="column is-hidden-touch">
+          Second column
+        </div>
     </div>
-  </body>
+    
+</body>
 </html>
