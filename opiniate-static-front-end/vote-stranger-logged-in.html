@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Opinate &mdash; Host genuine & private polls online for free !
+    </title>
+    <link
+      rel="shortcut icon"
+      href="./images/seo-and-web.svg"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+    ></script>
+    <link rel="stylesheet" href="./styles/animation.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="dashboard-wrapper">
+      <nav
+        class="navbar is-light"
+        role="navigation"
+        aria-label="main navigation"
+      >
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#">
+            <img src="./images/Mono-left.svg" width="112" height="28" />
+          </a>
+          <button
+            class="navbar-item navbar-create-btn button is-default is-rounded is-danger"
+          >
+            Create !
+          </button>
+        </div>
+      </nav>
+      <div class="hamburger dashboard is-hidden-desktop">
+        <img src="./images/arrow-hamburger.png" alt="arrow-hamburger" />
+      </div>
+      <header class="header columns is-desktop">
+        <div class="header--side-menu dashboard-with-data is-3 column">
+          <div class="contact-details">
+            <div class="personal-details">
+              <div class="user">
+                <img
+                  src="./images/dashboard-sample-image.jpg"
+                  alt="sample-image"
+                />
+                <div class="info-wrapper">
+                  <h2 class="is-size-5 has-text-weight-semibold">
+                    Ashutosh Panda
+                  </h2>
+                  <a href="#">Logout</a>
+                </div>
+              </div>
+              <p class="has-text-weight-semibold is-size-5">Your People</p>
+              <div class="add-contact">
+                <img src="./images/dashboard-add-btn.svg" alt="add-btn" />
+                <div class="input-details">
+                  <input class="name" type="text" placeholder="Name" />
+                  <input class="num" type="email" placeholder="Email" />
+                </div>
+              </div>
+            </div>
+            <div class="contacts">
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <div class="vote-stranger-logged-in is-9-desktop is-full-touch column">
+          <h2 class="vote-opinion is-size-1 is-size-2-mobile has-text-weight-semibold">What's Your Opinion ?</h2>
+          <div class="vote-question">
+            <h2 class="is-size-3 is-size-4-mobile has-text-weight-bold">The best anime in the world ?</h2>
+            <div class="option-values">
+              <input type="checkbox" name="cb" id="cb" />
+              <label for="cb" id="checkbox">
+                <svg viewBox="0 0 100 100">
+                  <path
+                    class="box"
+                    d="M82,89H18c-3.87,0-7-3.13-7-7V18c0-3.87,3.13-7,7-7h64c3.87,0,7,3.13,7,7v64C89,85.87,85.87,89,82,89z"
+                  />
+                  <polyline
+                    class="check"
+                    points="25.5,53.5 39.5,67.5 72.5,34.5 "
+                  />
+                </svg>
+                <span>Vinland Saga</span>
+              </label>
+              <input type="checkbox" name="cb2" id="cb2" />
+              <label for="cb2" id="checkbox">
+                <svg viewBox="0 0 100 100">
+                  <path
+                    class="box"
+                    d="M82,89H18c-3.87,0-7-3.13-7-7V18c0-3.87,3.13-7,7-7h64c3.87,0,7,3.13,7,7v64C89,85.87,85.87,89,82,89z"
+                  />
+                  <polyline
+                    class="check"
+                    points="25.5,53.5 39.5,67.5 72.5,34.5 "
+                  />
+                </svg>
+                <span>DeathNote</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <script>
+      /* HAMBURGER */
+      const hamburger = document.querySelector(".hamburger.dashboard img");
+      hamburger.addEventListener("click", () => {
+        const sidemenu = document.querySelector(".header--side-menu");
+        const userDetail = document.querySelector(".user");
+        const contacts = document.querySelector(".contacts div");
+
+        sidemenu.classList.toggle("sidemenu-hamburger");
+        userDetail.classList.toggle("user-hamburger");
+      });
+    </script>
+  </body>
+</html>
